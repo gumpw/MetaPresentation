@@ -1,0 +1,116 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <!--<meta name="apple-mobile-web-app-capable" content="yes" />-->
+    <title>Show me</title>
+
+    <meta name="author" content="Magic Joey" />
+    <meta content="width=device-width, minimum-scale=1,initial-scale=1, maximum-scale=1, user-scalable=1;" id="viewport" name="viewport">
+
+    <link rel="stylesheet" href="css/showme.css" />
+</head>
+
+<body class="impress-not-supported">
+`
+<div class="fallback-message">
+    <p>If you see this, just because your browser does not support the effect.</p>
+    <p>You can try <b>IE10</b>,<b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> browser.</p>
+</div>
+
+<div id="impress">
+
+    <div id="title" class="step" data-x="0" data-y="0" data-scale="4">
+        <span class="try">Hello, my name is</span>
+        <h1>Wang&nbsp;Qian</h1>
+        <span class="hint">
+            Use a spacebar or arrow keys to navigate
+        </span>
+    </div>
+    <div id="quote" class="step present active" data-x="0" data-y="-3000" data-rotate="-90" data-scale="5" style="position: absolute; -webkit-transform: translate(-50%, -50%) translate3d(0px, -3000px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(-90deg) scale(5); -webkit-transform-style: preserve-3d;">
+        <p>
+            I like to paint with pixel,
+            <a class="weibo" href="http://weibo.com/12wq24" target="_blank">share my
+                thoughts on weibo</a>, <a class="oschina" href="http://my.oschina.net/gumpw" target="_blank">ask questions on oschina</a> and <a class="github" href="https://github.com/gumpw">fork a repo on github</a>.
+        </p>
+    </div>
+
+    <div id="its" class="step" data-x="850" data-y="3000" data-rotate="90" data-scale="5">
+        <p>I prefer to call myself a <a href="http://en.wikipedia.org/wiki/Geek" target="_black"><b>geek</b></a>
+            { java developer.front-end development. interactive design. javascript addict.
+            user experience. web standards. php developer.
+            } , currently lives in <a href="http://en.wikipedia.org/wiki/Shanghai" target="_blank">ShangHai</a>.</p>
+    </div>
+
+    <div id="projects" class="step active present" data-x="4600" data-y="2300" data-rotate="0" data-scale="6" style="position: absolute; -webkit-transform: translate(-50%, -50%) translate3d(4600px, 2300px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(6); -webkit-transform-style: preserve-3d;">
+        <p>
+            <em>Projects</em> I am in {<br>
+            <em>
+                <a href="http://www.chebilin.com">Chebilin</a>,<br>
+            </em>
+            <em>
+                <a href="http://www.aero-monitor.com">Aero-monitor</a>,<br>
+            </em>
+            <em>
+                <a href="http://code.taobao.org/svn/erp-open/trunk">Erp-open</a><br>
+            </em>
+            <em>and <a href="https://github.com/gumpw">something else</a><br>
+            </em>
+            }
+        </p>
+    </div>
+
+    <div id="unitn" class="step active present" data-x="2500" data-y="-300" data-rotate="90" data-scale="6" style="position: absolute; -webkit-transform: translate(-50%, -50%) translate3d(2500px, -300px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(90deg) scale(6); -webkit-transform-style: preserve-3d;">
+        <p>I am graduated at 2011 from <a href="http://www.ahu.edu.cn/" target="_blank">Anhui University
+        </a><br>
+        </p>
+    </div>
+
+    <div id="works" class="step active present" data-x="3650" data-y="-1400" data-rotate="270" data-scale="6" style="position: absolute; -webkit-transform: translate(-50%, -50%) translate3d(3650px, -1400px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(270deg) scale(6); -webkit-transform-style: preserve-3d;">
+        <p>and I'm working in Allone co. as a Web Developer</p>
+    </div>
+
+    <div id="skills" class="step active present" data-x="6300" data-y="-2000" data-rotate="180" data-scale="6" style="position: absolute; -webkit-transform: translate(-50%, -50%) translate3d(6300px, -2000px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(180deg) scale(6); -webkit-transform-style: preserve-3d;">
+        <p>
+            my <em><span class="bold">skills</span></em> {
+            <em>
+                Interface design.
+                HTML5.
+                CSS3.
+                less.
+                javascript.
+                jQuery.
+                php.
+                java.
+                mysql.
+            </em>
+            }
+        </p>
+    </div>
+
+    <div id="contacts" class="step present active" data-x="5900" data-y="500" data-rotate="0" data-scale="4" style="position: absolute; -webkit-transform: translate(-50%, -50%) translate3d(5900px, 500px, 0px) rotateX(0deg) rotateY(0deg) rotateZ(0deg) scale(4); -webkit-transform-style: preserve-3d;">
+        <p>want to know more?</p>
+        <q><a href="http://weibo.com/12wq24" target="_blank">follow me on
+            weibo</a> or
+            <a href="mailto:outlierw@gmail.com" target="_blank">write me a mail</a>,
+            Luke!</q>
+    </div>
+
+    <div id="overview" class="step" data-x="3000" data-y="1500" data-scale="10">
+    </div>
+
+</div>
+
+<script>
+    if ("ontouchstart" in document.documentElement) {
+        document.querySelector(".hint").innerHTML = "<p>Tap on the left or right to navigate</p>";
+    }
+</script>
+
+<script src="js/impress.js"></script>
+<script>impress().init();</script>
+
+
+</body>
+</html>
